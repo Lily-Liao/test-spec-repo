@@ -1,0 +1,47 @@
+# Spec Repo CI/CD Pipeline
+#
+# 觸發時機：
+#   dev 分支更新 → 合併業務 spec (dev) + 同步快照回各 Repo dev 分支
+#   main 分支更新 → 合併業務 spec (prod) + 同步快照回各 Repo prod 分支 + Slack 通知
+
+stages:
+  - merge
+  - sync
+  - notify
+
+# ===== dev 分支 =====
+merge-business-spec-dev:
+  stage: merge
+  only:
+    - dev
+  script:
+    - echo "TODO：AI 合併 backend + frontend spec → business spec"
+
+sync-to-repos-dev:
+  stage: sync
+  only:
+    - dev
+  script:
+    - echo "TODO：同步快照到各 Repo dev 分支"
+
+# ===== main 分支 =====
+merge-business-spec-prod:
+  stage: merge
+  only:
+    - main
+  script:
+    - echo "TODO：AI 合併 backend + frontend spec → business spec"
+
+sync-to-repos-prod:
+  stage: sync
+  only:
+    - main
+  script:
+    - echo "TODO：同步快照到各 Repo production 分支"
+
+notify-slack:
+  stage: notify
+  only:
+    - main
+  script:
+    - echo "TODO：Slack 通知 #spec-updates"
