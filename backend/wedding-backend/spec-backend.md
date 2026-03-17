@@ -1,3 +1,7 @@
+<!-- ⚠️ 此檔案是從 Spec Repo 同步的唯讀快照，請勿直接修改。
+     要修改 spec 請在 .spec-changes/ 建立 changeset。
+     正本位置：spec-repo/backend/wedding-backend/spec-backend.md -->
+
 # wedding-backend 後端技術規格書
 
 <!--
